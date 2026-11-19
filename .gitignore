@@ -1,0 +1,44 @@
+# Données personnelles réelles (à retirer le jour de la mise en ligne)
+prive/
+prive
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.slnx
+*.sln
+*.njsproj
+*.esproj
+launchSettings.json
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.log
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+
+# Node (si un outil local est ajouté)
+node_modules/
+package-lock.json
+
+# Système
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*.swp
+~$*
+
+# Sources et brouillons à ne pas publier
+_brouillons/
+*.zip

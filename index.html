@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Analyste développeuse | Pilotage de projets MOE</title>
+  <meta name="description" content="Portfolio d'une ingénieure analyste développeuse en informatique d'assurance, orientée chefferie de projet IT / MOE.">
+  <meta property="og:title" content="Portfolio — Analyste développeuse">
+  <meta property="og:description" content="Analyste développeuse | Coordination et pilotage de projets MOE">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Aller au contenu</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#top" data-p="nom"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only" data-i18n="menu">Menu</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Expériences</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Langue / Language">
+        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="hero container" id="top">
+      <p class="eyebrow" data-i18n="hero.eyebrow">Ingénieure <span data-p="ecole"></span> · <span data-p="ville"></span></p>
+      <h1 data-p="nom"></h1>
+      <p class="role" data-i18n="hero.title">Analyste développeuse &amp; coordination de projets IT</p>
+      <p class="lead" data-i18n="hero.lead">
+        J'évolue dans l'informatique d'un groupe de bancassurance, côté assurance, chez <span data-p="employeur"></span>, à l'interface entre la maîtrise d'ouvrage
+        et les équipes techniques. J'analyse les besoins, conduis les études de faisabilité, développe en C# et COBOL,
+        et coordonne des projets multi-équipes — jusqu'à 3&nbsp;000 jours-homme en appui au chef de projet.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#contact" data-i18n="hero.cta">Me contacter</a>
+        <a class="btn btn-ghost" id="cv-link" href="#" download data-i18n="hero.cv">Télécharger mon CV</a>
+      </div>
+      <ul class="stats" aria-label="Chiffres clés">
+        <li><strong>3&nbsp;000</strong><span data-i18n="stats.1">jours-homme : projets coordonnés en appui</span></li>
+        <li><strong>2023</strong><span data-i18n="stats.2">diplôme d'ingénieure et entrée en CDI</span></li>
+        <li><strong>MOA ↔ MOE</strong><span data-i18n="stats.3">interface quotidienne métier / technique</span></li>
+      </ul>
+    </section>
+
+    <section class="section alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 id="skills-title" data-i18n="skills.title">Compétences</h2>
+        <div class="cards cards-3">
+          <article class="card">
+            <h3 data-i18n="skills.pm.title">Gestion de projet</h3>
+            <ul class="tags">
+              <li data-i18n="skills.pm.1">Pilotage de projets transverses</li>
+              <li data-i18n="skills.pm.2">Coordination multi-équipes</li>
+              <li data-i18n="skills.pm.3">Interface MOA / MOE</li>
+              <li data-i18n="skills.pm.4">Synthèse et consolidation</li>
+              <li>Agile · SAFe</li>
+              <li>Jira · Confluence</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 data-i18n="skills.an.title">Analyse</h3>
+            <ul class="tags">
+              <li data-i18n="skills.an.1">Recueil et formalisation des besoins</li>
+              <li data-i18n="skills.an.2">Études de faisabilité</li>
+              <li data-i18n="skills.an.3">Analyse fonctionnelle et technique</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3 data-i18n="skills.dev.title">Développement</h3>
+            <ul class="tags">
+              <li>C#</li>
+              <li>COBOL</li>
+              <li>Cloud</li>
+              <li>CI/CD</li>
+              <li>WebFarm</li>
+              <li data-i18n="skills.dev.1">Environnements micro et host</li>
+              <li>Git</li>
+            </ul>
+            <p class="muted small" data-i18n="skills.dev.note">Également pratiqués en formation : Java, C/C++, JavaScript, React, PHP, MySQL.</p>
+          </article>
+        </div>
+        <p class="languages"><strong data-i18n="skills.lang.title">Langues :</strong> <span data-i18n="skills.lang.list">français, anglais courant (TOEIC 930), allemand courant</span></p>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" data-i18n="projects.title">Projets</h2>
+        <div class="cards cards-2">
+
+          <article class="card project">
+            <p class="kicker" data-i18n="projects.p1.kicker">Projet professionnel · 2023</p>
+            <h3 data-i18n="projects.p1.title">Parcours de vente d'assurance multicanal</h3>
+            <p data-i18n="projects.p1.desc">Parcours de vente d'assurances pour téléphones, tablettes et ordinateurs, accessible via intranet, internet et applications clients. J'ai pris en charge le périmètre micro, en binôme avec le responsable du périmètre host.</p>
+            <ul class="tags small-tags"><li data-i18n="projects.tag.bank">Bancassurance</li><li data-i18n="projects.tag.omni">Multicanal</li><li>Micro / Host</li></ul>
+            <p class="muted small" data-i18n="projects.p1.note">Projet interne : code et démo non publics.</p>
+          </article>
+
+          <article class="card project">
+            <p class="kicker" data-i18n="projects.p2.kicker">Projet académique · <span data-p="ecole"></span></p>
+            <h3>Impulse</h3>
+            <p data-i18n="projects.p2.desc">Application visant à aider à consommer de manière plus intelligente. [À COMPLÉTER : type de consommation, technologies, ton rôle]</p>
+            <div class="links">
+              <a href="#" class="todo-link" data-i18n="projects.github">GitHub [À COMPLÉTER]</a>
+              <a href="#" class="todo-link" data-i18n="projects.demo">Démo [À COMPLÉTER]</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <p class="kicker" data-i18n="projects.p3.kicker">Projet académique · <span data-p="ecole"></span></p>
+            <h3>Astérios</h3>
+            <p data-i18n="projects.p3.desc">Programmation d'un robot équipé de capteurs. [À COMPLÉTER : objectif du robot, technologies, ton rôle]</p>
+            <div class="links">
+              <a href="#" class="todo-link" data-i18n="projects.github">GitHub [À COMPLÉTER]</a>
+              <a href="#" class="todo-link" data-i18n="projects.demo">Démo [À COMPLÉTER]</a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <p class="kicker" data-i18n="projects.p4.kicker">Projet pluridisciplinaire en équipe · <span data-p="ecole"></span></p>
+            <h3 data-i18n="projects.p4.title">Indicateur de porte connecté</h3>
+            <p data-i18n="projects.p4.desc">Dispositif piloté par télécommande indiquant à une personne qui frappe si elle peut entrer ou si elle ne doit pas déranger. [À COMPLÉTER : technologies, ton rôle]</p>
+            <div class="links">
+              <a href="#" class="todo-link" data-i18n="projects.github">GitHub [À COMPLÉTER]</a>
+              <a href="#" class="todo-link" data-i18n="projects.demo">Démo [À COMPLÉTER]</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <h2 id="experience-title" data-i18n="exp.title">Expériences</h2>
+        <ol class="timeline">
+
+          <li class="tl-item">
+            <p class="tl-date" data-i18n="exp.1.date">Oct. 2023 – aujourd'hui</p>
+            <h3><span data-i18n="exp.1.role">Analyste développeuse</span> · <span class="org" data-p="employeur"></span></h3>
+            <p class="muted small" data-i18n="exp.1.ctx">Bancassurance, pôle assurance · Maîtrise d'œuvre pour la MOA <span data-p="client"></span> · CDI</p>
+            <ul>
+              <li data-i18n="exp.1.b1">Pilote des projets transverses d'environ 10 jours-homme mobilisant plusieurs équipes.</li>
+              <li data-i18n="exp.1.b2">Backup du chef de projet sur des projets pouvant atteindre 3 000 jours-homme : coordination, échanges, consolidation.</li>
+              <li data-i18n="exp.1.b3">Analyse et formalise les besoins avec la MOA ; réalise les études de faisabilité.</li>
+              <li data-i18n="exp.1.b4">Développe en C# et COBOL sur environnements Cloud et WebFarm, avec CI/CD et frameworks internes.</li>
+            </ul>
+          </li>
+
+          <li class="tl-item">
+            <p class="tl-date" data-i18n="exp.2.date">Avr. 2023 – oct. 2023</p>
+            <h3><span data-i18n="exp.2.role">Stagiaire développeuse</span> · <span class="org" data-p="employeur"></span></h3>
+            <ul>
+              <li data-i18n="exp.2.b1">Périmètre micro d'un parcours de vente d'assurance multicanal, puis intégration à l'équipe et embauche en CDI.</li>
+            </ul>
+          </li>
+
+          <li class="tl-item">
+            <p class="tl-date">2022</p>
+            <h3><span data-i18n="exp.3.role">Développeuse web stagiaire</span> · <span class="org" data-p="stage2022"></span></h3>
+            <ul>
+              <li data-i18n="exp.3.b1">Application basée sur MantisBT, Jira et Confluence pour automatiser le support utilisateurs et suivre la qualité de service (Agile SAFe).</li>
+            </ul>
+          </li>
+
+          <li class="tl-item">
+            <p class="tl-date">2020 – 2021</p>
+            <h3><span data-i18n="exp.4.role">Stagiaire puis vacataire</span> · <span class="org" data-p="universite"></span></h3>
+            <ul>
+              <li data-i18n="exp.4.b1">Gestion d'un annuaire LDAP et mise en place de machines virtuelles.</li>
+            </ul>
+          </li>
+
+        </ol>
+
+        <h3 class="sub-title" data-i18n="edu.title">Formation</h3>
+        <ul class="edu">
+          <li><strong data-i18n="edu.1">Diplôme d'ingénieur — <span data-p="ecole"></span></strong> <span class="muted" data-i18n="edu.1.spec">Objets connectés, réseaux et services · 2020 – 2023</span></li>
+          <li><strong data-i18n="edu.2">Classe préparatoire PTSI/PT</strong> <span class="muted"><span data-p="lycee"></span> · 2018 – 2020</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+        <p class="lead" data-i18n="contact.lead">Ouverte aux opportunités de chefferie de projet IT / MOE. N'hésitez pas à m'écrire.</p>
+        <ul class="contact-links">
+          <li><a class="btn btn-primary" href="#" data-p="email" data-p-href="email" data-p-prefix="mailto:"></a></li>
+          <li><a class="btn btn-ghost" href="#" data-p-href="linkedin.url" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="btn btn-ghost" href="#" data-p-href="github.url" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span data-p="nom"></span> · <span data-p="ville"></span></p>
+    </div>
+  </footer>
+
+  <script src="donnees/profil.js"></script>
+  <script src="prive/profil.js"></script>
+  <script src="donnees/remplir.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

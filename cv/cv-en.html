@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume — Software Analyst &amp; Developer | IT Project Coordination</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #1e3a5f;
+    --text: #1f2328;
+    --muted: #57606a;
+    --line: #d0d7de;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #eef1f4; }
+  body {
+    font-family: "Inter", "Roboto", "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    font-size: 9.4pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 10mm auto;
+    padding: 13mm 15mm 11mm;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,.12);
+    overflow: hidden;
+  }
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 3.2mm; margin-bottom: 3.6mm; }
+  h1 { font-size: 22pt; font-weight: 700; letter-spacing: .02em; color: var(--accent); line-height: 1.1; }
+  .headline { font-size: 11pt; font-weight: 600; margin-top: 1mm; }
+  .contact { display: flex; flex-wrap: wrap; gap: 1mm 5mm; margin-top: 2mm; color: var(--muted); font-size: 8.8pt; list-style: none; }
+  .contact a { color: inherit; text-decoration: none; }
+  section { margin-bottom: 3.4mm; }
+  h2 {
+    font-size: 9.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: .8mm; margin-bottom: 2mm;
+  }
+  .summary { text-align: justify; }
+  .job { margin-bottom: 2.6mm; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  .job-title { font-weight: 700; font-size: 9.8pt; }
+  .job-org { font-weight: 500; color: var(--accent); }
+  .job-date { color: var(--muted); font-size: 8.6pt; white-space: nowrap; }
+  .job-context { color: var(--muted); font-size: 8.7pt; margin: .5mm 0 1mm; }
+  .sub { font-weight: 600; font-size: 8.9pt; margin: 1.2mm 0 .4mm; }
+  ul.bullets { padding-left: 4.2mm; }
+  ul.bullets li { margin-bottom: .6mm; }
+  ul.bullets li::marker { color: var(--accent); }
+  .todo { background: #fff4d6; padding: 0 1mm; border-radius: 1mm; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 7mm; }
+  .skills { list-style: none; }
+  .skills li { margin-bottom: 1mm; }
+  .skills strong { color: var(--accent); font-weight: 600; }
+  .edu-line { display: flex; justify-content: space-between; gap: 4mm; margin-bottom: 1mm; }
+  .edu-line span:last-child { color: var(--muted); font-size: 8.6pt; white-space: nowrap; }
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; box-shadow: none; }
+    .todo { background: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <h1 data-p="nom"></h1>
+    <p class="headline">Software Analyst &amp; Developer | IT Project Coordination</p>
+    <ul class="contact">
+      <li data-p="ville"></li>
+      <li><a href="#" data-p="email" data-p-href="email" data-p-prefix="mailto:"></a></li>
+      <li data-p="telephone"></li>
+      <li><a href="#" data-p="linkedin.label" data-p-href="linkedin.url"></a></li>
+      <li><a href="#" data-p="github.label" data-p-href="github.url"></a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">
+      Engineering graduate <span data-p="ecoleDe"></span>, working as a Software Analyst &amp; Developer at <span data-p="employeur"></span>,
+      the IT arm of a major French bancassurance group, where I work on the insurance side. I bridge business stakeholders and engineering teams — gathering and
+      refining requirements, running feasibility studies and building applications. I lead small cross-team projects and
+      act as deputy project manager on large-scale programs of up to 3,000 person-days. Now looking to step into a full
+      IT project manager role, drawing on a combined technical and functional background.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">Software Analyst &amp; Developer — <span class="job-org" data-p="employeur"></span></p>
+        <p class="job-date">Oct 2023 – Present · Full-time</p>
+      </div>
+      <p class="job-context">Bancassurance IT, insurance division · Delivery side, working with <span data-p="client"></span> as business owner · <span data-p="ville"></span></p>
+
+      <p class="sub">Project leadership &amp; coordination</p>
+      <ul class="bullets">
+        <li>Lead cross-team projects of around 10 person-days end to end, coordinating contributors from several teams.</li>
+        <li>Serve as deputy project manager on major programs of up to 3,000 person-days, driving coordination, stakeholder communication and status consolidation.</li>
+        <li>Keep information flowing between business stakeholders, development teams and shared-services teams.</li>
+        <li>Compile and consolidate project tracking data and status updates for business stakeholders.</li>
+        <li class="todo">[À COMPLÉTER : one concrete, measurable outcome — deadline met, release delivered, gain achieved]</li>
+      </ul>
+
+      <p class="sub">Business &amp; technical analysis</p>
+      <ul class="bullets">
+        <li>Elicit, clarify and document business requirements together with business stakeholders.</li>
+        <li>Run technical and functional feasibility studies ahead of development.</li>
+      </ul>
+
+      <p class="sub">Software development</p>
+      <ul class="bullets">
+        <li>Build and maintain C# and COBOL applications on cloud and web-farm infrastructure, using CI/CD pipelines and in-house frameworks.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">Software Development Intern — <span class="job-org" data-p="employeur"></span></p>
+        <p class="job-date">Apr 2023 – Oct 2023</p>
+      </div>
+      <ul class="bullets">
+        <li>Built the distributed (non-mainframe) layer of an omnichannel insurance sales journey for phones, tablets and computers, available on intranet, web and customer apps, working alongside the mainframe lead.</li>
+        <li>Took on regular team work by the end of the project; hired full-time upon completion.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">Web Developer Intern — <span class="job-org" data-p="stage2022"></span></p>
+        <p class="job-date">2022</p>
+      </div>
+      <ul class="bullets">
+        <li>Developed an application built on MantisBT, Jira and Confluence to automate user support and monitor service quality, within a SAFe Agile framework.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">IT Intern, then Part-time IT Assistant — <span class="job-org" data-p="universite"></span></p>
+        <p class="job-date">2020 – 2021</p>
+      </div>
+      <ul class="bullets">
+        <li>Managed an LDAP directory and set up virtual machines for an internal application.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="grid-2">
+      <ul class="skills">
+        <li><strong>Project management:</strong> cross-team project leadership, multi-team coordination, business–IT liaison, reporting</li>
+        <li><strong>Analysis:</strong> requirements gathering and documentation, feasibility studies</li>
+        <li><strong>Methods &amp; tools:</strong> Agile, SAFe, Jira, Confluence, MantisBT, Git</li>
+      </ul>
+      <ul class="skills">
+        <li><strong>Development:</strong> C#, COBOL; working knowledge of Java, C/C++, JavaScript, React, PHP, MySQL</li>
+        <li><strong>Environments:</strong> Cloud, web farm, CI/CD, distributed and mainframe environments, in-house frameworks</li>
+        <li><strong>Languages:</strong> French (native), English (fluent, TOEIC 930), German (fluent)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p class="edu-line"><span><strong>Master's-level Engineering Degree (Diplôme d'ingénieur)</strong> — <span data-p="ecole"></span>, IoT, Networks &amp; Services</span><span>2020 – 2023</span></p>
+    <p class="edu-line"><span><strong>Preparatory Classes for Engineering Schools (PTSI/PT)</strong> — <span data-p="lycee"></span></span><span>2018 – 2020</span></p>
+  </section>
+
+</main>
+<script src="../donnees/profil.js"></script>
+<script src="../prive/profil.js"></script>
+<script src="../donnees/remplir.js"></script>
+<script>
+  appliquerProfil(document.documentElement.lang);
+  document.title = (document.documentElement.lang === "en" ? "Resume — " : "CV — ") + (window.PROFIL && PROFIL.nom ? PROFIL.nom : "");
+</script>
+</body>
+</html>

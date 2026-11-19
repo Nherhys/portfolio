@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV — Analyste développeuse | Coordination et pilotage de projets MOE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #1e3a5f;
+    --accent-soft: #e8eef5;
+    --text: #1f2328;
+    --muted: #57606a;
+    --line: #d0d7de;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #eef1f4; }
+  body {
+    font-family: "Inter", "Roboto", "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    font-size: 9.4pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 10mm auto;
+    padding: 13mm 15mm 11mm;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,.12);
+    overflow: hidden;
+  }
+  header { border-bottom: 2px solid var(--accent); padding-bottom: 3.2mm; margin-bottom: 3.6mm; }
+  h1 { font-size: 22pt; font-weight: 700; letter-spacing: .02em; color: var(--accent); line-height: 1.1; }
+  .headline { font-size: 11pt; font-weight: 600; margin-top: 1mm; }
+  .contact { display: flex; flex-wrap: wrap; gap: 1mm 5mm; margin-top: 2mm; color: var(--muted); font-size: 8.8pt; list-style: none; }
+  .contact a { color: inherit; text-decoration: none; }
+  section { margin-bottom: 3.4mm; }
+  h2 {
+    font-size: 9.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
+    color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: .8mm; margin-bottom: 2mm;
+  }
+  .summary { text-align: justify; }
+  .job { margin-bottom: 2.6mm; }
+  .job:last-child { margin-bottom: 0; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  .job-title { font-weight: 700; font-size: 9.8pt; }
+  .job-org { font-weight: 500; color: var(--accent); }
+  .job-date { color: var(--muted); font-size: 8.6pt; white-space: nowrap; }
+  .job-context { color: var(--muted); font-size: 8.7pt; margin: .5mm 0 1mm; }
+  .sub { font-weight: 600; font-size: 8.9pt; margin: 1.2mm 0 .4mm; color: var(--text); }
+  ul.bullets { padding-left: 4.2mm; }
+  ul.bullets li { margin-bottom: .6mm; }
+  ul.bullets li::marker { color: var(--accent); }
+  .todo { background: #fff4d6; padding: 0 1mm; border-radius: 1mm; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 7mm; }
+  .skills { list-style: none; }
+  .skills li { margin-bottom: 1mm; }
+  .skills strong { color: var(--accent); font-weight: 600; }
+  .edu-line { display: flex; justify-content: space-between; gap: 4mm; margin-bottom: 1mm; }
+  .edu-line span:last-child { color: var(--muted); font-size: 8.6pt; white-space: nowrap; }
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; box-shadow: none; }
+    .todo { background: none; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header>
+    <h1 data-p="nom"></h1>
+    <p class="headline">Analyste développeuse | Coordination et pilotage de projets MOE</p>
+    <ul class="contact">
+      <li data-p="ville"></li>
+      <li><a href="#" data-p="email" data-p-href="email" data-p-prefix="mailto:"></a></li>
+      <li data-p="telephone"></li>
+      <li><a href="#" data-p="linkedin.label" data-p-href="linkedin.url"></a></li>
+      <li><a href="#" data-p="github.label" data-p-href="github.url"></a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>Profil</h2>
+    <p class="summary">
+      Ingénieure diplômée <span data-p="ecoleDe"></span>, analyste développeuse en informatique d'assurance depuis 2023. À l'interface entre la MOA et
+      les équipes techniques, j'analyse les besoins, conduis les études de faisabilité et développe. Je pilote des projets
+      transverses et appuie les chefs de projet sur des projets jusqu'à 3&nbsp;000 jours-homme. Objectif&nbsp;: devenir
+      cheffe de projet MOE grâce à ma double expertise technique et fonctionnelle.
+    </p>
+  </section>
+
+  <section>
+    <h2>Expérience professionnelle</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">Analyste développeuse — <span class="job-org" data-p="employeur"></span></p>
+        <p class="job-date">Oct. 2023 – aujourd'hui · CDI</p>
+      </div>
+      <p class="job-context">Bancassurance, pôle assurance · Maîtrise d'œuvre (MOE) pour la MOA <span data-p="client"></span> · <span data-p="ville"></span></p>
+
+      <p class="sub">Pilotage et coordination de projets</p>
+      <ul class="bullets">
+        <li>Pilote des projets transverses d'environ 10 jours-homme mobilisant plusieurs équipes.</li>
+        <li>Assure le backup du chef de projet sur des projets majeurs pouvant atteindre 3&nbsp;000 jours-homme&nbsp;: coordination, échanges et consolidation des informations.</li>
+        <li>Fluidifie l'information entre MOA, équipes de développement et équipes transverses&nbsp;; consolide les éléments de suivi et les remontées vers la MOA.</li>
+        <li class="todo">[À COMPLÉTER : un résultat concret et mesurable — délai tenu, livraison, gain obtenu]</li>
+      </ul>
+
+      <p class="sub">Analyse fonctionnelle et technique</p>
+      <ul class="bullets">
+        <li>Analyse, clarifie et formalise les besoins métiers avec la MOA&nbsp;; réalise les études de faisabilité techniques et fonctionnelles.</li>
+      </ul>
+
+      <p class="sub">Développement</p>
+      <ul class="bullets">
+        <li>Développe et fait évoluer des applications en C# et COBOL, sur environnements Cloud et WebFarm, avec chaîne CI/CD et frameworks internes.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">Stagiaire développeuse — <span class="job-org" data-p="employeur"></span></p>
+        <p class="job-date">Avr. 2023 – oct. 2023</p>
+      </div>
+      <ul class="bullets">
+        <li>Développé le périmètre micro d'un parcours de vente multicanal d'assurances d'appareils (intranet, internet, applications clients), en binôme avec le responsable host.</li>
+        <li>Intégrée aux activités courantes de l'équipe, puis embauchée en CDI.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">Développeuse web stagiaire — <span class="job-org" data-p="stage2022"></span></p>
+        <p class="job-date">2022</p>
+      </div>
+      <ul class="bullets">
+        <li>Développé une application s'appuyant sur MantisBT, Jira et Confluence pour automatiser le support utilisateurs et suivre la qualité de service, dans un cadre Agile SAFe.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="job-title">Stagiaire puis vacataire — <span class="job-org">Service informatique, <span data-p="universite"></span></span></p>
+        <p class="job-date">2020 – 2021</p>
+      </div>
+      <ul class="bullets">
+        <li>Administré un annuaire LDAP et déployé des machines virtuelles pour une application interne.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Compétences</h2>
+    <div class="grid-2">
+      <ul class="skills">
+        <li><strong>Gestion de projet&nbsp;:</strong> pilotage de projets transverses, coordination multi-équipes, interface MOA/MOE, synthèse et reporting</li>
+        <li><strong>Analyse&nbsp;:</strong> recueil et formalisation des besoins, études de faisabilité</li>
+        <li><strong>Méthodes et outils&nbsp;:</strong> Agile, SAFe, Jira, Confluence, MantisBT, Git</li>
+      </ul>
+      <ul class="skills">
+        <li><strong>Développement&nbsp;:</strong> C#, COBOL&nbsp;; notions de Java, C/C++, JavaScript, React, PHP, MySQL</li>
+        <li><strong>Environnements&nbsp;:</strong> Cloud, WebFarm, CI/CD, environnements micro et host, frameworks internes</li>
+        <li><strong>Langues&nbsp;:</strong> français (langue maternelle), anglais courant (TOEIC 930), allemand courant</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Formation</h2>
+    <p class="edu-line"><span><strong>Diplôme d'ingénieur</strong> — <span data-p="ecole"></span>, spécialité Objets connectés, réseaux et services</span><span>2020 – 2023</span></p>
+    <p class="edu-line"><span><strong>Classe préparatoire PTSI/PT</strong> — <span data-p="lycee"></span></span><span>2018 – 2020</span></p>
+  </section>
+
+</main>
+<script src="../donnees/profil.js"></script>
+<script src="../prive/profil.js"></script>
+<script src="../donnees/remplir.js"></script>
+<script>
+  appliquerProfil(document.documentElement.lang);
+  document.title = (document.documentElement.lang === "en" ? "Resume — " : "CV — ") + (window.PROFIL && PROFIL.nom ? PROFIL.nom : "");
+</script>
+</body>
+</html>
